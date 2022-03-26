@@ -1,0 +1,623 @@
+/* body 공통 */
+
+html, body, h1, h2, h3, h4, h5, h6, section,
+header, aside, footer, nav, article, figure,
+fieldset, p, ul, ol, li, dl, dt, dd, form {
+    margin: 0; padding: 0;
+}
+
+
+.header{
+   padding: 30px;
+}
+
+
+
+/* 여기서 시작해세요 -1번 body */
+.welcome_root{
+    width: 1280px;
+    height: 420px;
+    margin: 0 auto;
+    
+}
+;
+.welcome_root_container{
+  width: 100%;
+}
+.welcom_swiper .swiper-wrapper{
+    display: flex;
+}
+
+/* 제목 텍스트 데코레이션 제거 및 색상변경 */
+.courses_header>a {
+    text-decoration: none;
+    color: black;
+}
+
+/* 제목 안의 small 태그 수정 */
+.courses_header small{
+    color: salmon;
+    font-size: 0.7em;
+
+}
+/* 서브타이틀 제목 */
+.welcome_root p{
+    color: gray;
+    font-size: 0.9em;
+}
+
+/* 전체 리스트 영역 */
+.main_course_list {
+    width: 100%; height: 100%;
+    margin: 0 auto;
+}
+
+/* 전체 시작부분 */
+.welcome_content {
+    width: 100%; height:  100%;
+    margin: 0 auto;
+   
+}
+
+/* flex 정렬 */
+.swiper-container{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.swiper-wrapper1 {
+    width: 100%; height: 100%;
+    display: flex;
+    margin-bottom: 150px;
+}
+
+/* 카드 앞면 + 뒷면 */
+.welcome_content_item{
+width: 100%; height:  320px;
+align-items: center;
+}
+
+/* 카드 이미지 영역 */
+.card_image{
+    padding-top: 0;
+width: 100%; height: 150px;
+}
+
+/* 카드 앞면 이미지 크기 */
+.welcome_img {
+
+    width: 100%; height: 150px;
+    padding-bottom: 10px;
+
+}
+
+/* 카드 앞면 콘텐츠 영역 */
+.card-content {
+    width: 100%; height: 200px;
+}
+
+/* 강의 제목 */
+.course_title {
+    width: 100%; height: 40px;
+    color: #454545;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+/* 강사 */
+.instructor {
+    width: 100%; height: 20px;
+    font-size: 0.9em;
+    color: #7d7d7d;
+}
+/* 리뷰 */
+.rating_star {
+    color: rgb(240, 121, 52);
+    font-weight: bold;
+    display: flex;
+}
+
+.review_cnt{
+    display: block;
+    color: black;
+}
+
+/* 가격 표시 영역 */
+.price{
+    width: 100%; height: 25px;
+    display: flex;
+}
+
+.price>del {
+    padding-right: 10px;
+    color: #595959;
+}
+
+.price  {
+    font-weight: bold;
+    color: #175CBE;
+}
+
+/* 할인영역 */
+.discount {
+    display: block;
+    font-size: 0.9em;
+    border-radius: 5px ;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px; 
+    -webkit-box-shadow: 7px 3px 15px 4px #EDEDED; 
+    box-shadow: 7px 3px 15px 4px #EDEDED;
+    border : 1px solid wheat;
+     
+}
+
+/* 수강생 수  */
+.tag{
+    color: black;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px ;
+    display: inline-flex;
+    width: 50px; height: 25px;
+    font-size: 0.7em;
+}
+
+/* 카드 앞면 높이 + 넓이 */
+.front_course_card{
+    width: 100%; height: 350px;
+}
+
+
+/* 카드 앞면 텍스트 데코 제거 */
+.front_course_card a {
+    text-decoration: none;
+
+
+}
+
+
+/* 카드 뒷면 높이 +넓이 */
+.course_card_back{
+    background-color: black;
+    opacity: 0.9;
+    width: 230px; height: 320px;
+}
+
+/* 카드 뒷면 텍스트 데코 제거 */
+.course_card_back a{
+    text-decoration: none;
+   }
+   
+/* 카드 뒷면 타이틀 */
+.course_card_back .course_title{
+    padding-top: 10px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* 카드 뒷면 상세정보 */
+.course_card_back .back_course_metas{
+   
+    color: lightskyblue;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.course_card_back .active_btn{
+    margin-top: 20px;
+
+}
+/* 뒷면 카드 블럭 display :none  */
+.welcome_content_item .course_card_back{
+    display: none;
+}
+/* 카드에 마우스 hover시 뒷면 보이게 설정 */
+.welcome_content_item:hover .course_card_back{
+    display: block;
+    transform: translateY(-280px);
+}
+
+/* 장바구니 등 아이콘 - body 1,4영역 공통 사용 */
+i{
+    margin: auto 0;
+    padding: 10px;
+
+}
+
+/* 장바구니에 담기 아이콘 색상 변경 */
+.input_cart i{
+    color: tomato;
+    opacity: 0.7;
+}
+
+/* 위시리스트 아이콘 색상 변경 */
+.input_wishlist i{
+    color: rgba(255, 0, 0, 0.7);
+}
+
+/* 내폴더 아이콘 색상 변경 */
+.input_myfolder i{
+    color: orchid;
+    opacity: 0.7;
+}
+
+.active_btn .btn_cart, .btn_wishlist, .btn_myfolder{
+    display: none;
+}
+
+/* 장바구니에 담기 hover */
+.input_cart:hover .btn_cart{
+    /* transform: translateX(120px); */
+    width: 100px ; height: 20px;
+    text-align: center;
+    display: block;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px ;
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+
+/* 위시리스트 담기 hover */
+.input_wishlist:hover .btn_wishlist{
+    /* transform: translateX(120px); */
+    width: 100px ; height: 20px;
+    text-align: center;
+    display: block;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px ;
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+/* 내폴더에 담기 hover */
+.input_myfolder:hover .btn_myfolder{
+    /* transform: translateX(120px); */
+    width: 100px ; height: 20px;
+    text-align: center;
+    display: block;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px ;
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+
+/* 슬라이드 버튼화면 */
+.bx-viewport{
+    width: 1180px; height: 350px;
+}
+/* 포지셔닝 */
+.bx-wrapper {
+    position: relative;
+}
+
+/* 슬라이드 버튼 데코레이션 삭제 및 블록영역 설정 */
+.bx-controls-direction a {
+    position:absolute;
+    top: 50%;
+    transform: translateY(-100%);
+    text-decoration: none;
+    display: block;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    color: #595959;
+    /* background-color: white;
+    border : 2px solid black;
+    border-radius: 50%; */
+}
+.bx-controls-direction .bx-prev{ left : -40px;}
+.bx-controls-direction .bx-next{ right : -40px;}
+
+/* 슬라이드 버튼 폰트 사이즈 지정 */
+.bx-controls-direction .bx-prev, .bx-next{
+    font-size: 50px;
+}
+/* 슬라이드 버튼 아이콘 */
+.bx-controls-direction .bx-prev:before{
+    content: "\e93c";
+    font-family: 'xeicon';
+}
+
+.bx-controls-direction .bx-next:before{
+    content: "\e93f";
+    font-family: 'xeicon';
+}
+
+/* 로드맵 */
+
+
+.roadmap_root{
+    width: 1280px;
+    height: 320px;
+    margin: 0 auto;
+}
+
+.roadmap_root_container{
+    width: 100%;
+}
+
+
+/* header 데코레이션 제거  */
+.header>a {
+    text-decoration: none;
+    color: black;
+}
+/*  슬라이드 표현하는 영역 */
+.swiper-wrapper2 {
+    display: flex;
+}
+/*  카드 이미지 + 설명 */
+.card_image_card_roadmap_card{
+    width: 290px;
+    height: 250px;
+
+}
+/* a태그 텍스트 데코 제거 */
+.card_image_card_roadmap_card a{
+    text-decoration: none;
+    color: #363636;
+
+}
+
+/* 이미지 사이즈 */
+.roadmap_img{
+    width: 290px;
+    height: 150px;
+}
+
+/* 카드 설명영역 */
+ .card-content{
+    width: 290px;
+    height: 10px;
+  
+  
+}
+
+h5 {
+  font-size: 18px;
+  
+}
+
+
+/* 읽어보기 - 3번째 body*/
+
+.curation{
+
+    width: 1280px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.curation_container{
+    width: 100%;
+}
+
+/* 큰제목 (클래스명 header) */
+ .header{
+ width: 1180px; height: 36px;
+ margin-left: 10px;
+ padding-left: 0;
+}
+
+.curation_wrapper{
+width: 100%; height: 100%;
+display: flex;
+}
+/* 카드 3개 묶은 전체 콘텐츠영역 */
+.curation_content{
+
+ width: 100%;
+ height: 100%;
+ display: flex;
+}
+/* 이미지 + 제목 + 텍스트 (3개) 영역 */
+.content_item{
+width: 100%; height: 300px;
+}
+
+.curation_content a {
+    text-decoration: none;
+}
+
+/* 카드뉴스 이미지 */
+.image {
+    width: 400px;
+    height: 200px;
+}
+/* 제목 */
+.sub-title{
+        width: 390px; height: 30px;
+    }
+/* 텍스트영역 - 말줄임표 */
+ .text{
+    width:390px;
+overflow:hidden;
+text-overflow:ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+    }
+
+.sub-title, .text{
+    color: black;
+}
+
+
+
+/* 신규강의 */
+.InfD__FloatButton_cover{
+    position: relative;
+}
+
+.new_course{
+    width: 1280px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.new_course_container{
+    width: 100%;
+}
+
+.new_course_list {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header>a {
+    text-decoration: none;
+    color: black;
+}
+
+.header>a>h1>small{
+    color: salmon;
+    font-size: 0.7em;
+
+}
+
+.rc_content{
+    width: 100%; height: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+
+.swiper-wrapper3 {
+    width: 100%; height: 100%;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.rc_content_item {
+    width: 230px; height: 280px;
+ 
+}
+
+.card_image .image2 {
+    width: 220px; height: 130px;
+    padding-bottom: 20px;
+
+}
+
+.card_content {
+    width: 230px; height: 140px;
+}
+
+.course_title {
+    width: 230px; height: 45px;
+    color: #454545;
+}
+
+
+
+.writer {
+    width: 230px; height: 20px;
+    font-size: 0.9em;
+    color: #7d7d7d;
+}
+.price{
+    width: 230px; height: 20px;
+    display: flex;
+}
+.price>del {
+    padding-right: 10px;
+    color: #595959;
+}
+
+.pay_price  {
+    font-weight: bold;
+    color: #175CBE;
+}
+
+.discount {
+    display: block;
+    font-size: 0.9em;
+    border-radius: 5px ;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px; 
+    -webkit-box-shadow: 7px 3px 15px 4px #EDEDED; 
+    box-shadow: 7px 3px 15px 4px #EDEDED;
+    border : 1px solid wheat;
+     
+}
+
+.tag{
+    color: black;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px ;
+    display: inline-flex;
+    width: 50px; height: 25px;
+    font-size: 0.7em;
+}
+
+
+.front_course_card{
+  
+    width: 230px; height: 280px;
+}
+
+.front_course_card a {
+    text-decoration: none;
+  
+
+}
+
+.back_course_card{
+    background-color: black;
+    opacity: 0.9;
+    width: 230px; height: 290px;
+}
+
+.back_course_card a{
+    text-decoration: none;
+   }
+   
+
+.back_course_card .back_title{
+    padding-top: 10px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.back_course_card .metas{
+   
+    color: lightskyblue;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+/* .active_btn{
+    display: flex;
+} */
+.back_course_card .active_btn{
+    margin-top: 10px;
+
+}
+
+
+.rc_content_item .back_course_card{
+    display: none;
+}
+
+.rc_content_item:hover .back_course_card{
+    display: block;
+    transform: translateY(-280px);
+}
+

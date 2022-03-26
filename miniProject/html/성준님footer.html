@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inflearn 따라하기</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* 공통 css */
+        * {margin: 0;padding: 0;}
+
+        /* 1번째 footer css */
+        ul {list-style: none;
+        padding: 0;
+        white-space: nowrap;
+        font-size: 0;
+        }
+        .a, .b, .c{
+            position: relative;
+        }
+        img{
+            max-width: 100%;
+            height: 170px;
+        }
+        .a > div[style], .b > div[style], .c > div[style]{
+            position: absolute;
+            top: 15%;
+	        left: 7.5%;
+            font-size: 1.4vw;
+            font-weight: bold;
+            letter-spacing: 1px;
+            line-height: 3.5vh;
+        }
+        .a > button, .b > button, .c > button{
+            position: absolute;
+            top: 60%;
+	        left: 7.5%;
+            font-size: 1.25vw;
+            font-weight: bold;
+            border: 0;
+            padding: 7px 10px;
+            background-color: white;
+            color: #1dc078;
+            border-radius: 8px;
+            letter-spacing: -1px;
+            cursor: pointer;
+        }
+        .slideshowli{
+            display: inline-block;
+            transition: all .2s;
+            border: 0;
+        }
+        .a > .lab, .b > .lab, .c > .lab{
+            position: absolute;
+            top: 65%;
+            left: 78vw;
+        }
+        label{
+            cursor: pointer;
+            display: inline-block;
+            margin: 0.2vw;
+            border-radius: 5px; 
+            border: 0px solid rgb(253, 253, 253); 
+           background-color: white;
+            width: 26px; 
+            height: 28px;
+            font-size: large;
+            opacity: 0.9;
+            
+        }
+        #slide1:checked ~ ul > li{
+            transform: translateX(0%);
+        }
+        #slide2:checked ~ ul > li{
+            transform: translateX(-100%);
+        }
+        #slide3:checked ~ ul > li{
+            transform: translateX(-200%);
+        }
+
+/* 3번째 footer css */
+        .f3{
+            background-color: #f1f1f1;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .f3d1h{
+            font-size: 1.86vw;
+            letter-spacing: 0.5px;
+            font-weight: bold;
+            margin-left: 2vw;
+        }
+        .f3d1b{
+            font-size: 1.25vw;
+            letter-spacing: -0.5px;
+            color: #757575;
+            padding-top: 8px;
+            padding-bottom: 20px;
+            margin-left: 2vw;
+        }
+        .f3d2{
+            white-space: nowrap;
+            line-height: 100%;
+            overflow: hidden;
+        }
+        .f3d21st, .f3d22nd, .f3d23rd{
+            display: inline-block;
+            float: left;
+            background-color: #fff;
+            border-radius: 6px;
+            box-shadow: 0px 0px 2px grey;
+            width: 26%;
+            height: 21vw;
+            padding: 4.5vh 2.5vw;
+            margin-left: 1.5%;
+            white-space: normal;
+            letter-spacing: -0.8px;
+        }
+        .f3d2h{
+            font-size: 1.5vw;
+            font-weight: bolder;
+            margin: 1vw;
+            word-break: break-all;
+        }
+        .f3d2b{
+            margin: 1vw;
+            font-size: 1.25vw;
+            line-height: 2.1vw;
+            color: #757575;
+            word-break: break-all;
+        }
+        .f3d2f{
+            margin: 1vw;
+            margin-top: 7vw;
+            font-size: 1.25vw;
+            line-height: 3vw;
+            border: 1px solid;
+            border-radius: 20px;
+            background-color: #1dc078;
+            border-color: #1dc078;
+            width: 15vw;
+            height: 3vw;
+            text-align: center;
+            font-weight: bolder;
+        }
+        a{
+            text-decoration-line: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1번째 footer -->
+    <section>
+        <div class="slideshowtopdiv">
+            <div class="slideshowbodydiv">
+                <div class="label">
+                    <input type="radio" name="tab" id="slide1" hidden checked>
+                    <input type="radio" name="tab" id="slide2" hidden>
+                    <input type="radio" name="tab" id="slide3" hidden>
+                        <ul class="slideshowul">
+                            <li class="slideshowli">
+                                <div class="a">
+                                    <img src="https://cdn.inflearn.com/public/main_sliders/3b67a1a1-aae3-442e-8e17-791b7cdfb5f5/bottom-1920-205-%281111%29.jpg">
+                                    <div style="color:#404040;">모든 팀원이 인프런의 강의들을<br>자유롭게 학습하는 환경을 제공해주세요.</div>
+                                    <button type="button" onclick="location.href='#'">비즈니스 알아보기</button>
+                                    <div class="lab">
+                                        <label for="slide3" class="left">&nbsp;&lt;</label>
+                                        <label for="slide2" class="right">&nbsp;&gt;</label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slideshowli">
+                                <div class="b">
+                                    <img src="https://cdn.inflearn.com/public/main_sliders/38744ba0-b12a-491a-9ca2-43375c3905ba/share-you.jpg">
+                                    <div style="color:#404040;">지식을 나눠주세요. <br />쉽게 시작하고 합당한 보상을 받을 수 있어요.</div>
+                                    <button type="button" onclick="location.href='#'">지식공유 알아보기</button>
+                                    <div class="lab">
+                                        <label for="slide1" class="left">&nbsp;&lt;</label>
+                                        <label for="slide3" class="right">&nbsp;&gt;</label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slideshowli">
+                                <div class="c">
+                                    <img src="https://cdn.inflearn.com/public/main_sliders/39bcb91f-64a4-4a16-8878-e8dc7cd342e8/bottom-1920-205-%28221%29.jpg">
+                                    <div style="color: white;">당신은 더 좋은 곳에 갈 수 있어요.<br />지금 열려있는 채용공고를 확인해보세요.</div>
+                                    <button type="button" onclick="location.href='#'">공고 확인하기</button>
+                                    <div class="lab">
+                                        <label for="slide2" class="left">&nbsp;&lt;</label>
+                                        <label for="slide1" class="right">&nbsp;&gt;</label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul> 
+                </div>
+            </div>
+        </div>
+    </section>
+      <!-- 3번쨰 footer -->
+    <section>
+        <div class="f3">
+            <div class="f3d1">
+                <div class="f3d1h">다양한 서비스를 신청하세요.</div>
+                    <div class="f3d1b">
+                        인프런의 지식공유자 ˙ 비즈니스 ˙ 대학생 신청방법에 대해 알아보세요.
+                    </div>
+                </div>
+                <div class="f3d2">
+                    <div class="f3d21st">
+                        <div class="f3d2h">지식공유자 되기</div>
+                        <div class="f3d2b">9개월간 온라인 기술 강의로만 1억원!<br>나의 지식을 나눠 사람들에게 배움의 기회를 주고, 의미있는 대가를 가져가세요.
+                        </div>
+                        <a href="#">
+                            <div class="f3d2f">지식공유자 참여하기&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></div>
+                        </a>
+                    </div>
+                    <div class="f3d22nd">
+                        <div class="f3d2h">인프런 비즈니스 신청</div>
+                        <div class="f3d2b">모든 팀원의 인프런의 강의들을 자유롭게 학습하는 환경을 제공해주세요.<br>업무 스킬에 집중된 콘텐츠를 통해 최신 트렌드의
+                            업무역량을 습득할 수 있습니다.</div>
+                        <a href="#">
+                            <div class="f3d2f">비즈니스 신청하기&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></div>
+                        </a>
+                    </div>
+                    <div class="f3d23rd">
+                        <div class="f3d2h">인프런 X 대학생</div>
+                        <div class="f3d2b">학교와 인프런이 함께 하여,<br>많은 학생 분들께 정해진 커리큘럼 이외에도 필요한 학습을 보완하고, 더욱 성장할 수 있도록
+                            도와드립니다.</div>
+                        <a href="#">
+                            <div class="f3d2f">대학생 신청하기&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+    </section>
+</body>
+</html>

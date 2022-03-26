@@ -1,0 +1,671 @@
+/* 공통 style */
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+li, ul{
+    list-style: none;
+}
+div{
+    display: block;
+}
+
+/* 상단 nav */
+.navbar{
+    width: 100%;
+    height: 64px;
+    align-items: stretch;
+    position: relative;
+}
+.navbar .content{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.brand_logo path{
+    fill: #1dc078;
+}
+.brand_logo{
+    margin: 8px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 auto;
+}
+.navbar_menu:link, .navbar_menu:visited{
+    color: #4a4a4a;
+}
+.nav_menu_left{
+    flex: 1 1 auto;
+    float: left;
+    align-items: center;
+    display: flex;
+    color: black;
+}
+a.navmenu{
+    color: currentColor;
+}
+.nav_menu_right{
+    display: flex;
+    align-items: center;
+}
+.navbar_menu .nav_menu_left .navbar_item{
+    color: #4a4a4a;
+    margin: 8px 6px;
+    display: flex;
+    line-height: 1.5;
+    font-weight: 400;
+    position: relative;
+}
+.nav_menu_right .question_box, .nav_menu_right .open_knowledge{
+    margin: 8px 4px;
+    display: flex;
+    font-weight: 400;
+    line-height: 1.5;
+    position: relative;
+    font-size: 0.8rem;
+    color: #4a4a4a;
+}
+.open_knowledge span:hover{
+    color: #1dc078;
+}
+.nav_menu_right .login, .nav_menu_right .sign_up{
+    margin: 8px 2px;
+    display: flex;
+    line-height: 1.5;
+    position: relative;
+}
+.nav_menu_right .login button{
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    padding: 4px 6px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    background-color: #fff;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+.nav_menu_right .sign_up button{
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    padding: 4px 7px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    background-color: rgb(245, 106, 106);
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+.question_box:hover{
+    border: 1px solid rgb(102, 105, 102);
+    border-radius: 3px;
+    height: 35px;
+}
+.nav_menu_right .question_box{
+    background-color: #f6f6f6;
+    height: 30px;
+
+}
+
+.nav_menu_right .question_box .input{
+    float: left;
+    border: 0;
+    align-items: center;
+    background-color: #f6f6f6;
+    border-radius: 3px;   
+    width: 144px;
+    height: 30px;
+}
+
+.nav_menu_right .question_box .fa-magnifying-glass{
+    height: 10px;
+    margin-right: 5px;
+    background-color: #f6f6f6;
+}
+
+/* 큰 배너  */
+.hero{
+    clear: both;
+    width: 100%;
+    position: relative;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 372px;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+.hero .content_slide{
+    clear: both;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+}
+.hero .slide_big_content{
+    width: 100%;
+    height: 320px;
+    position: relative;
+    flex-shrink: 0; 
+}
+.hero a{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.hero .hot_content{
+    height: 320px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.hot_content_slide{
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+}
+.hero .hot_content_slide .container{
+    height: 100%;
+    width: auto;
+    max-width: 1200px;
+    padding: 0;
+}
+.container{
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+}
+.hero .hot_content .cover_right{
+    width: 55%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .hot_content .cover_right img .banner-pc-image{
+    display: block;
+}
+.hero .hot_content .cover_right img{
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+.hero .hot_content_slide .cover_left{
+    width: 45%;
+    position: absolute;
+    left: 10px;
+    top: 44%;
+    transform: translateY(-50%);
+    max-width: 600px;
+}
+.hero .hot_content .cover_left .tags{
+    display: flex;
+    margin-bottom: 16px;
+}
+.hero .hot_content .cover_left .tags > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 10px;
+    height: 24px;
+    font-size: .875rem;
+    font-weight: 700;
+    border-radius: 4px;
+}
+.hero .hot_content .cover_left .tags > div:nth-child(2){
+    margin-left: 6px;
+}
+.hero .hot_content .cover_left .hot_content_h1{
+    margin-bottom: 8px;
+    white-space: pre;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+.hero .hot_content .cover_left .hot_content_p{
+    word-break: keep-all;
+    white-space: pre;
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* 작은 배너  */
+.hero .small_slide{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 52px;
+   
+}
+.hero .small_slide .container{
+    max-width: 1200px;
+    height: 52px;
+    display: flex;
+    position: relative;
+    margin: 6px 0;
+    margin-top: 10px;
+}
+.hero .small_slide .container .slide_left{
+    width: 135px;
+    height: 36px;
+    color: #fff;
+    font-size: 0.875rem;
+    background-color: rgb(157, 155, 155);
+    border-radius: 20px;
+}
+.hero .small_slide .container .slide_left .index_all{
+    width: 20px;
+    height: 36px;
+    line-height: 36px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    margin-right: 30px;
+    display: flex;
+    float: left;
+}
+.small_slide .container .slide_left .buttons_header button{
+    cursor: pointer;
+    line-height: 36px;
+    color: white;
+    font-weight: 200;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+}
+.hero .content_slide .small_slide .divider{
+    float: left;
+    margin: 5px 10px;
+    width: 1px;
+    height: 36px;
+    background-color: #dee2e6;
+    display: flex;
+}
+.hero .content_slide .small_slide .swiper_smallslide_wrapper{
+    width: 960px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    display: flex;
+}
+.hero .content_slide .small_slide .swiper_smallslide_wrapper .swiper_smallslide{
+    flex: 0 0 auto;
+    height: 36px;
+    background-color: #fff;
+    font-size: 0.9rem;
+    align-items: center;
+    flex-direction: row;
+}
+.hero .content_slide .small_slide .swiper_smallslide_wrapper .swiper_smallslide .smallslide_content{
+    cursor: pointer;
+    border: 0.3px solid rgb(222, 220, 220);
+    padding: 5px 8px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.open_smallslide .hidden_box_open_button{
+    display: flex;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    color: #495057;
+    margin-bottom: 20px;
+}
+.open_smallslide i{
+    margin-left: 3px;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.hero .content_slide .small_slide .swiper_smallslide_wrapper .swiper_smallslide .smallslide_content
+,.hero .content_slide .small_slide .swiper_smallslide_wrapper .open_smallslide button{
+    text-align: center;
+    line-height: 36px;
+    font-weight: 700;
+    color: #495057;
+    box-shadow: inset 0 0 0 1px #ced4da;
+}
+
+.swiper-container.review-swiper{
+    height: 480px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 배너 하단 검색창 */
+.search{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 48px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.search .searchBox .searchBox_content .searchBox_mention{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.search .searchBox .searchBox_content .searchBox_search{
+    border: 2px solid rgb(182, 245, 182);
+    height: 60px;
+    line-height: 40px;
+    align-items: center;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: rgb(228, 247, 239);
+}
+.search .searchBox .searchBox_content .searchBox_search :placeholder-shown{
+    margin-left: 10px;
+}
+.search .searchBox .searchBox_content .input_searchBox_search{
+    width: 450px;
+    border: 0;
+    outline: 0;
+    background-color: rgb(228, 247, 239);
+    font-size: 0.875rem;
+    font-weight: 550;
+}
+.search .searchBox .searchBox_content .button_searchBox_search{
+    border: 0;
+    outline: 0;
+    background-color: #fff;
+    font-size: 0.875rem;
+    margin: 15px;
+    background-color: rgb(228, 247, 239);
+}
+
+/* 검색창 하단 태그 10개 */
+.tag_section{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    align-items: center;
+    height: 72px;
+}
+.tag_section .tag_section_tags{
+    margin: 0 auto;
+    height: 72px;
+}
+.tag_section .tag_tags{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+    letter-spacing: -.3px;
+    font-size: 0.875rem;
+    margin: 4px;
+    padding: 0 12px;
+    height: 28px;
+    color: #3e4042;
+    font-weight: 500;
+    border-radius: 20px;
+    background: #f1f3f5;
+}
+.tag_section .tag_tags a{
+    color: rgb(78, 77, 77);
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+.tag_tags:hover{
+    background-color: #d7d7d7;
+}
+
+/* 모달창1 20220323*/
+.modal_header1 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    top:0;
+    left: 0;
+    backdrop-filter: blur(3px);
+}
+.modal_header1>.modal_content_header1{
+    position: absolute;
+    top: 300px;
+    left: calc(50% - 180px);
+    width: 360px !important;
+    background-color: white;
+    border-radius: 6px;
+}
+.modal_header1 .close_modal1{
+    float: right;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+.modal_content_header1 .brand_logo{
+    clear: both;
+    margin: 12px auto 24px;
+    display: flex;
+    align-items: center;
+}
+.modal_content_header1 .modal_header1_login{
+    display: flex;
+    flex-direction: column;
+}
+.modal_content_header1 .login_content .login_modal_id
+, .modal_content_header1 .login_content .login_modal_pwd
+{
+    margin-left: 10px;
+    margin-bottom: 15px;
+    width:312px !important;
+    margin-top: 0 !important;
+    display: flex;
+    padding: 13px 12px;
+    height: 48px;
+    border : 1px solid #dee2e6;
+    border-radius: 4px;
+    background-color: #fff;
+
+}
+.modal_content_header1 .login_content .login_modal_id:hover{
+    border : 2px solid #1dc078;
+}
+.modal_content_header1 .login_content .login_modal_pwd:hover{
+    border : 2px solid #1dc078;
+}
+.modal_content_header1 .login_content input{
+    padding: 0;
+    width: 100%;
+    line-height: 1.47;
+    letter-spacing: -.3px;
+    font-size: 15px;
+    border: 0;
+    background: none;
+}
+.modal_content_header1 .login_content .login_modal_login{
+    cursor: pointer;
+    margin-left: 10px;
+    width:340px !important;
+    height: 48px;
+    border: 1px solid;
+    color: #fff;
+    border-color: #00c471;
+    font-weight: 700;
+    background-color: #00c471;
+}
+.modal_content_header1 .login_content .modal_findpwd
+, .modal_content_header1 .login_content .modal_signup{
+    float: left;
+    line-height: 1.38;
+    font-size: 13px;
+    font-weight: 400;
+    color: #616568;
+    border-bottom: 1px solid #858a8d;
+    cursor: pointer;
+    margin: 5px;
+}
+.modal_content_header1 .login_content .modal_findpwd{
+    margin-left: 90px;
+}
+.modal_content_header1 .login_content .modal_divider{
+    float: left;
+    line-height: 1.38;
+    font-size: 15px;
+    color: #616568;
+    cursor: pointer;
+    margin: 5px;
+}
+.modal_content_header1 .login_content .social_signin_line{
+    clear: both;
+    position: relative;
+    bottom:-8px;
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #f1f3f5;
+    border: none;
+    margin-bottom: 10px;
+}
+.modal_content_header1 .login_content .social_signin{
+    clear: both;
+    padding: 0 8px;
+    margin-bottom: 20px;
+    margin-left: 140px;
+    font-size: 11px;
+    line-height: 16px;
+    color: #abb0b5;
+    z-index: 1;
+    background-color: #fff;
+    text-align: center;
+    align-items: center;
+}
+.modal_content_header1 .login_content .social_signin_img{
+    display: flex;
+    margin: auto;
+    column-gap: 12px;
+    cursor: pointer;
+}
+.modal_content_header1 .login_content .social_signin_img button{
+    border: 0;
+}
+.modal_content_header1 .login_content .social_signin_img img{
+    width: 50px;
+    height: 50px;
+}
+
+/* hiddenBox */
+.hidden_box{
+    display: none;
+    width: 700px;
+    z-index: 1;
+    top:370px;
+    left: 700px;
+    position: absolute;
+    overflow: hidden;
+    background-color: white;
+    border: 2px solid black;
+   
+}
+.hidden_box_content{
+    display: flex;
+    flex-direction: column;
+    margin: 4px;
+}
+.hidden_box_content .hidden_box_content_header{
+    height: 28px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+}
+.hidden_box_content .hidden_box_content_header h3{
+    float:  left;
+    margin-top: 3px;
+    margin-left: 10px;
+    color: #515151;
+    font-weight: 600;
+}
+.hidden_box_content .hidden_box_content_header button{
+    cursor: pointer;
+    float: right;
+    margin-top: 4px;
+    margin-right: 10px;
+    border: 0;
+    background-color: transparent;
+    color: #9d9d9d;
+    border-bottom: 1px solid rgb(171, 171, 171);
+}
+.hidden_box_content .hidden_box_content_span{
+    cursor: pointer;
+    position: relative;
+    margin: 7px;
+}
+.hidden_box_content .hidden_box_content_ul{
+    position: relative;
+}
+.hidden_box_content .hidden_box_content_ul li{
+    display: flex;
+    float: left;
+    border: 1.5px solid gray;
+    border-radius: 20px;
+    margin: 3px;
+    font-size: 0.875rem;
+}
+.hidden_box_content .hidden_box_content_ul span{
+    margin: 4px;
+}
+.hidden_box_content .hidden_box_content_ul .hidden_box_conten_spancontent{
+    width: auto;
+    height: 20px;
+}
+
+
+
+
+
+/* .modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top:0;
+    width: 100%;
+    overflow: auto;
+    background-color: #ced4da;
+}
+.modal_content{
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+.close{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+}
+.close:hover, .close:focus{
+    color: black;
+    cursor:pointer;
+} */

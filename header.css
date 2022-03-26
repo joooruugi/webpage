@@ -373,10 +373,10 @@ a.navmenu{
 }
 .hero .content_slide .small_slide .swiper_smallslide_wrapper{
     width: 960px;
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
     float: left;
-    display: flex;
+    /* display: flex; */
 }
 .hero .content_slide .small_slide .swiper_smallslide_wrapper .swiper_smallslide{
     flex: 0 0 auto;

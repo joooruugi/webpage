@@ -134,7 +134,76 @@ a.navmenu{
     margin-right: 5px;
     background-color: #f6f6f6;
 }
+/* 드롭다운 메뉴 20220326 */
+.nabvar_menu_somany{
+    
+    color: black;
+    z-index: 0;
+    text-decoration: none;
+}
+.navbar_menu li{
+    list-style: none;
+    text-decoration: none;
+}
 
+.navbar_dropmenu_step1, .navbar_dropmenu_step2, .navbar_dropmenu_step3{
+    display: none;
+}
+/* .has_dropmenu:hover >.navbar_dropmenu_step1{
+    display: flex;
+} */
+/* .navmenu:hover > ul{
+    display: flex;
+    flex-direction: column;
+} */
+.navbar_dropmenu_step1 li:hover > ul{
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+.navbar_dropmenu_step2 li:hover > ul{
+    top: 0;
+    left: 180px;
+    display: flex;
+    flex-direction: column;
+}
+.navbar_dropmenu_step3:hover{
+    display: flex;
+    flex-direction: column;
+}
+.navbar_dropmenu_step1{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    border: 1px solid gray;
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    width: 180px;
+    height:550px;
+}
+.navbar_dropmenu_step2{
+    margin: 0;
+    padding: 0;
+    border: 1px solid gray;
+    position: absolute;
+    left: 180px;
+    width: 180px;
+    height:550px;
+}
+.navbar_dropmenu_step3{
+    margin: 0;
+    padding: 0;
+    border: 1px solid gray;
+    position: absolute;
+    width: 180px;
+    left: 360px;
+    height:550px;
+}
+.has_dropmenu:hover .navbar_dropmenu_step1{
+    display: flex;
+    flex-direction: column;
+}
 /* 큰 배너  */
 .hero{
     clear: both;
@@ -146,8 +215,10 @@ a.navmenu{
     justify-content: space-between;
     height: 372px;
     border-bottom: 1px solid rgb(207, 207, 207);
+    z-index: 1;
 }
 .hero .content_slide{
+    z-index: 1;
     clear: both;
     width: 100%;
     margin-left: auto;
@@ -158,6 +229,7 @@ a.navmenu{
     padding: 0;
 }
 .hero .slide_big_content{
+    z-index: 1;
     width: 100%;
     height: 320px;
     position: relative;

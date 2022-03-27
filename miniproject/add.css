@@ -129,21 +129,12 @@ a.navmenu{
     list-style: none;
     
 }
-
-
 .navbar_dropmenu_step1, .navbar_dropmenu_step2, .navbar_dropmenu_step3{
     display: none;
 }
 .navbar_dropmenu_step1 a, .navbar_dropmenu_step2 a, .navbar_dropmenu_step3 a{
     text-decoration: none;
 }
-/* .has_dropmenu:hover >.navbar_dropmenu_step1{
-    display: flex;
-} */
-/* .navmenu:hover > ul{
-    display: flex;
-    flex-direction: column;
-} */
 .navbar_dropmenu_step1 li:hover > ul{
     top: 0;
     display: flex;

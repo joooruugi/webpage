@@ -1,202 +1,225 @@
 
-        /* 공통 css */
-        * {margin: 0;padding: 0;}
-        
-        body{margin: 0; padding: 0;}
+/* 1번째 footer css */
+ul {list-style: none;
+    padding: 0;
+    white-space: nowrap;
+    /* font-size: 0; */
+    /* overflow:hidden; */
+    
 
-        /* 1번째 footer css */
-        ul {list-style: none;
-        padding: 0;
-        white-space: nowrap;
-        font-size: 0;
-        }
-        .a, .b, .c{
-            position: relative;
-        }
-        img{
-            width: 100vw;
-            height: 24vh;
-            cursor: grab;
-        }
-        .a > div[style], .b > div[style], .c > div[style]{
-            position: absolute;
-            top: 15%;
-	        left: 10vw;
-            font-size: 1.2vw;
-            font-weight: bold;
-            letter-spacing: 0.1px;
-            line-height: 3.0vh;
-        }
-        .a > button, .b > button, .c > button{
-            position: absolute;
-            top: 60%;
-	        left: 10vw;
-            font-size: 1vw;
-            font-weight: 900;
-            border: 0;
-            padding: 7px 10px;
-            background-color: white;
-            color: #1dc078;
-            border-radius: 8px;
-            letter-spacing: -1px;
-            cursor: pointer;
-        }
-        .slideshowli{
-            display: inline-block;
-            transition: all .2s;
-            border: 0;
-        }
-        .a > .lab, .b > .lab, .c > .lab{
-            position: absolute;
-            top: 65%;
-            left: 78vw;
-        }
-        label{
-            cursor: pointer;
-            display: inline-block;
-            margin: 0.2vw;
-            border-radius: 5px; 
-            border: 0px solid rgb(253, 253, 253); 
-           background-color: white;
-            width: 26px; 
-            height: 28px;
-            font-size: large;
-            opacity: 0.9;
-            
-        }
-        #slide1:checked ~ ul > li{
-            transform: translateX(0%);
-        }
-        #slide2:checked ~ ul > li{
-            transform: translateX(-100%);
-        }
-        #slide3:checked ~ ul > li{
-            transform: translateX(-200%);
-        }
+    }
+    .a, .b, .c{
+        position: relative;
+        display: inline-block;
+        margin-bottom: -6.5vh;
+    }
+    .slideshowli img{
+        width: 100%;
+        height: 40%;
+        
+    }
+    .a > div[style], .b > div[style], .c > div[style]{
+        position: absolute;
+        top: 15%;
+        left: 10vw;
+        font-size: 1.2vw;
+        font-weight: bold;
+        letter-spacing: 0.1px;
+        line-height: 3.0vh;
+    }
+    .a > button, .b > button, .c > button{
+        position: absolute;
+        top: 55%;
+        left: 10vw;
+        font-size: 1vw;
+        font-weight: 900;
+        border: 0;
+        padding: 7px 10px;
+        background-color: white;
+        color: #1dc078;
+        border-radius: 8px;
+        letter-spacing: -1px;
+        cursor: grab;
+    }
+    .slideshowli{
+        display: inline-block;
+        transition: all .2s;
+        border: 0;
+    }
+    .a > .lab, .b > .lab, .c > .lab{
+        position: relative;
+        top: -5vh;
+        right: 20%;
+        float: right;
+        
+    }
+    label{
+        cursor: pointer;
+        display: inline-block;
+        margin: 0.2vw;
+        border-radius: 5px; 
+        border: 0px solid rgb(253, 253, 253); 
+       background-color: white;
+        width: 26px; 
+        height: 28px;
+        font-size: large;
+        opacity: 0.9;
+        
+    }
+    #slide1:checked ~ ul > li{
+        transform: translateX(0%);
+    }
+    #slide2:checked ~ ul > li{
+        transform: translateX(-100%);
+    }
+    #slide3:checked ~ ul > li{
+        transform: translateX(-200%);
+    }
 
 /* 3번째 footer css */
-        .f3{
-            /* 20220323 박정환 수정 : background-color 제거, max-width 100% 추가 */
-            /* background-color: #f1f1f1; */
-            max-width: 1200px;
-            margin: 0 auto;
-            padding-top: 2vh;
-            padding-bottom: 4vh;
+
+    .f3{
+        background-color: #f1f1f1;
+        padding-top: 2vh;
+        padding-bottom: 4vh;
+        
+    }
+    .f3d1h{
+        font-size: 1.25vw;
+        letter-spacing: 0.3px;
+        font-weight: bold;
+        margin-left: 10vw;
+        margin-top: 1.7vh;
+        width: auto;
+    }
+    .f3d1b{
+        font-size: 1vw;
+        letter-spacing: 0.3px;
+        color: #757575;
+        padding-top: 8px;
+        padding-bottom: 20px;
+        margin-left: 10vw;
+    }
+    .f3d2{
+        white-space:nowrap;
+        line-height: 100%;
+        overflow: hidden;
+        margin-left: 5.5vw;
+        margin-right: 5.5vw;
+        display: block;
+        width: 100%;
+        min-width: none;
+        height: auto;
+    }
+    .f3d21st, .f3d22nd, .f3d23rd{
+        display: inline-block;
+        /* float: left; */
+        background-color: #fff;
+        border-radius: 1px;
+        box-shadow: 0px 0px 4px 0px rgba(176, 176, 176, 0.35);
+        width: 22%;
+        min-width: auto;
+        height: auto;
+        padding: 4.5vh 2.5vw;
+        margin-left: 1.2vw;
+        margin-right: 1.2vw;
+        margin-top: 0.2vh;
+        margin-bottom: 0.2vh;
+        white-space: normal;
+        letter-spacing: -0.8px;
+        
+    }
+    .f3d21st{
+        margin-left: 4vw;
+    }
+    .f3d2h{
+        font-size: 1.2vw;
+        font-weight: bolder;
+        margin-left: 1.6vw;
+        margin-right: 1vw;
+        margin-bottom: 0.5vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        word-break: break-all;
+    }
+    .f3d2b{
+        margin-left: 1.6vw;
+        margin-right: 1vw;
+        font-size: 1vw;
+        line-height: 1.8vw;
+        width: 17.5vw;
+        color: #757575;
+        word-break:break-all;
+        position: absolute;
+    }
+    .f3d2f{
+        margin: 1.4vw;
+        margin-top: 9vw;
+        font-size: 1vw;
+        line-height: 2vw;
+        border: 1px solid;
+        border-radius: 10vh;
+        background-color: #1dc078;
+        border-color: #1dc078;
+        width: 12.5vw;
+        height: 2.2vw;
+        text-align: left;
+        font-weight: bolder;
+        position: relative;
+        top: 2vh;
+        padding-left: 1vw;
+    }
+    a{
+        text-decoration-line: none;
+        color: white;
+    }
+    i.fa-arrow-right{
+        display: inline;
+    }
+
+
+    @media screen and (min-width: 1920px) { 
+
+        .a > div[style], .b > div[style], .c > div[style]{
+            font-size: 1.2rem;
+            margin-left: 9vw;
         }
-        /* 20220323 박정환 수정 : f3d1 스타일 추가 */
-        .f3d1{
-            margin-bottom: 20px;
+        .a > button, .b > button, .c > button{
+            font-size: 1.2rem;
+            margin-left: 9vw;
         }
-        .f3d1h{
-            font-size: 1.25vw;
-            letter-spacing: 0.3px;
-            font-weight: bold;
-            margin-left: 10vw;
-            margin-top: 1.7vh;
-        }
-        .f3d1b{
-            font-size: 1vw;
-            letter-spacing: 0.3px;
-            color: #757575;
-            padding-top: 8px;
-            padding-bottom: 20px;
-            margin-left: 10vw;
-        }
-        .f3d2{
-            white-space: nowrap;
-            line-height: 100%;
-            /* 20220323 박정환 수정 : overflow hidden, margin-left/right 제거 */
-            /* overflow: hidden;
-            margin-left: 5.5vw;
-            margin-right: 5.5vw; */
-            height: 45vh;
-        }
-        /* 20220323 박정환 임시 수정  */
-        .f3d21st, .f3d22nd, .f3d23rd{
-            display: inline-flex;
-            width: 380px;
-            height: 330px;
-            flex-direction: column;
-            padding:48px;
-            color: #333;
-            box-sizing: border-box;
-            margin: 2px;
-            flex: 0 0 auto;
-            box-shadow:0px 0px 4px 0px rgba(176, 176, 176, 0.35);
-            border-radius: 4px;
-            /* display: inline-block; */
-            /* float: left; */
-            /* background-color: #fff;
-            border-radius: 1px;
-            box-shadow: 0px 0px 4px 0px rgba(176, 176, 176, 0.35);
-            width: 44vh;
-            height: 44vh;
-            padding: 4.5vh 2.5vw;
-            margin-left: 2vw;
-            margin-right: 2vw;
-            margin-top: 0.2vh;
-            margin-bottom: 0.2vh;
-            white-space: normal;
-            letter-spacing: -0.8px; */
-        }
-        .f3d21st{
-            margin-left: 4vw;
-            margin-right: 0vw;
-        }
-        .f3d22nd{
-            margin-left: 1.2vw;
-            margin-right: -0.85vw;
-        }
-        /* 20220323 박정환 임시 수정  */
-        .f3d2h{
-            font-size: 1.125rem;
-            line-height: 1.125;
-            font-weight: 600;
-            margin-bottom: 8px;
-            /* font-size: 1.2vw;
-            font-weight: bolder;
-            margin-left: 1.3vw;
-            margin-right: 1vw;
-            margin-bottom: 0.5vw;
-            padding-top: 1vw;
-            padding-bottom: 1vw;
-            word-break: break-all; */
-        }
-        /* 20220323 박정환 임시 수정  */
-        .f3d2b{
-            width: 100%;
-            color: #757575;
+
+
+        .f3{height: 23vh;}
+        .f3d1h, .f3d1b{
             font-size: 1rem;
-            box-sizing: inherit;
-            /* margin-left: 1.3vw;
-            margin-right: 1vw;
-            font-size: 1vw;
-            line-height: 1.8vw;
-            width: 17.5vw;
-            color: #757575;
-            word-break:break-all;
-            position: absolute; */
+            padding: 0;
+            margin-top: 0;
+            padding-left: 9vw;
+            
+        }
+        .f3d21st, .f3d22nd, .f3d23rd{
+            font-size: 1rem;
+            height: 16vh;
+            width: 16%;
+            margin-top: 10px;
+            margin-left: 11vw;
+           padding: 4vh;
+           padding-top: 1vh;
+        }
+        .f3d22nd, .f3d23rd{
+            margin-left: 2vw;
+        }
+        .f3d2h, .f3d2b, .f3d2f{
+            font-size: 1rem;
+            margin: 0;
+            line-height: 2vh;
         }
         .f3d2f{
-            margin: 1.3vw;
-            margin-top: 9vw;
-            font-size: 1.05vw;
-            line-height: 2vw;
-            border: 1px solid;
-            border-radius: 30px;
-            background-color: #1dc078;
-            border-color: #1dc078;
-            width: 12vw;
-            height: 2vw;
-            text-align: center;
-            font-weight: bolder;
-            position: relative;
-            top: 2vh;
+            top: 8vh;
+            line-height: 4vh;
         }
-        .f3d21st a{
-            text-decoration-line: none;
-            color: white;
-        }
+    }
 
 
 
@@ -257,6 +280,7 @@
             align-items: center;
             /* 옆으로 낄 공간이 부족할때 줄넘김 설정 : 하단으로 내림.*/
             flex-wrap: wrap;
+            /* line-height: 30px; */
         }
         
         .buttons .button{
